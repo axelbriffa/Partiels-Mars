@@ -1,0 +1,194 @@
+main h1 {
+  text-align: center;
+}
+
+main form {
+  margin-top: 60px;
+}
+
+main li:first-child {
+  margin-right: 40px;
+}
+
+main form li:first-child > * {
+  padding: 5px;
+  border: solid #645D43 2px;
+  height: 40px;
+  color: #645D43;
+  margin-right: 20px;
+  background-color: #fff;
+}
+
+main #filtre {
+  height: 40px;
+  border: solid #645D43 2px;
+  color: #fff;
+  background-color: #645D43;
+}
+
+main ul, main li, main a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+#illu {
+  position: absolute;
+  width: 26%;
+  z-index: -1;
+  top: 98px;
+  right: 166px;
+}
+
+.blog {
+  border: solid 2px #BA6A4F;
+  padding: 30px;
+  margin: 50px 0;
+  background-color: #fff;
+}
+
+.haut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.haut div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  width: 60%;
+  max-height: 275px;
+  overflow-y: scroll;
+}
+
+.haut h2 {
+  margin-bottom: 20px;
+}
+
+.haut figure {
+  width: 30%;
+}
+
+.bas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bas div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bas #avis {
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bas .oui, .bas .non {
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bas form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bas button:hover {
+  border: solid #645D43 2px;
+}
+
+.bas i {
+  font-size: 1.5rem;
+}
+
+main button {
+  background: unset;
+  background: unset;
+  color: unset;
+  border: unset;
+}
+
+main form {
+  margin: unset;
+}
+
+#blob {
+  top: 188px;
+  width: 54%;
+  left: 0%;
+}
+
+@media screen and (max-width: 950px) {
+  #illu {
+    right: 93px;
+    top: 169px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .haut figure {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #illu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0 20px;
+  }
+  .haut {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .haut figure {
+    margin-bottom: 20px;
+  }
+  .bas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bas > * {
+    margin: 7px 0;
+  }
+}
+/*# sourceMappingURL=blog.css.map */

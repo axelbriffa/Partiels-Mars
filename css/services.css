@@ -1,0 +1,346 @@
+main {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 4fr 7fr;
+      grid-template-rows: 4fr 7fr;
+      grid-template-areas: "tete" "service";
+}
+
+#tete {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tete;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tete > * {
+  margin: 20px 0;
+}
+
+#tete #propo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tete #propo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tete figure {
+  width: 80%;
+}
+
+#tete i {
+  color: #BA6A4F;
+  font-size: 3rem;
+}
+
+#service {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: service;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+#service article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px 0;
+}
+
+#service figure img {
+  width: 175px;
+}
+
+#service article > * {
+  margin: 0 20px;
+}
+
+#service article:nth-child(even) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#service .desc {
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+#service #cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#slider {
+  height: 290px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#slider figure {
+  height: 100%;
+}
+
+#slider figure img {
+  height: 100%;
+}
+
+#slider #precedant, #slider #suivant, #slider #circle {
+  position: absolute;
+  z-index: 1;
+}
+
+#slider #circle {
+  left: calc(50% - 77px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+}
+
+#slider #circle > * {
+  border-radius: 25px;
+  background-color: #fff;
+  margin: 0 3px;
+}
+
+#slider #circle i:first-child {
+  background-color: #645D43;
+}
+
+#slider #precedant, #slider #suivant {
+  font-size: 2.5rem;
+  top: calc(50% - 44px);
+  color: #BA6A4F;
+}
+
+#slider #precedant:hover, #slider #suivant:hover {
+  background-color: #e5e6cf77;
+  border-radius: 25px;
+}
+
+#slider #precedant {
+  left: 5px;
+}
+
+#slider #suivant {
+  right: 5px;
+}
+
+#service > article:nth-child(odd) {
+  position: relative;
+}
+
+.svg {
+  top: 0px;
+  left: 0px;
+}
+
+#service #yoga {
+  width: 380px;
+  top: 31px;
+  left: 51px;
+}
+
+#service #sport {
+  width: 548px;
+  top: -44px;
+  left: 353px;
+}
+
+#service #lune {
+  width: 347px;
+  top: -2px;
+  left: 182px;
+}
+
+#deco > * {
+  width: 75%;
+  top: 0;
+  left: 0;
+}
+
+#un {
+  top: 213px;
+  width: 73.5%;
+  left: 103px;
+}
+
+#deux {
+  top: 503px;
+  width: 69.5%;
+  left: 178px;
+}
+
+#trois {
+  top: 812px;
+  width: 76.5%;
+  left: 128px;
+}
+
+#quatre {
+  top: 1056px;
+  width: 65.5%;
+  left: 188px;
+}
+
+#cinq {
+  top: 1377px;
+  width: 72.5%;
+  left: 153px;
+}
+
+#six {
+  top: 1632px;
+  width: 31%;
+  left: 555px;
+}
+
+@media screen and (max-width: 1100px) {
+  #cinq {
+    top: 1417px;
+    width: 74.5%;
+    left: 117px;
+  }
+  #six {
+    top: 1682px;
+    width: 27%;
+    left: 441px;
+  }
+  #service #sport {
+    width: 473px;
+    top: -44px;
+    left: 266px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #service #sport {
+    width: 428px;
+    top: -22px;
+    left: 176px;
+  }
+  #un {
+    top: 221px;
+    width: 73.5%;
+    left: 70px;
+  }
+  #deux {
+    top: 527px;
+    width: 69.5%;
+    left: 102px;
+  }
+  #trois {
+    top: 812px;
+    width: 76.5%;
+    left: 128px;
+  }
+  #quatre {
+    top: 1106px;
+    width: 63.5%;
+    left: 171px;
+  }
+  #cinq {
+    top: 1421px;
+    width: 72.5%;
+    left: 91px;
+  }
+  #six {
+    top: 1694px;
+    width: 25%;
+    left: 367px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .svg {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #tete #propo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #tete #propo > * {
+    margin: 20px 0;
+  }
+  #service article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #service article:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: end;
+  }
+}
+/*# sourceMappingURL=services.css.map */

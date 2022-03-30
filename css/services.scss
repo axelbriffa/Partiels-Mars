@@ -1,0 +1,304 @@
+$red : #BA6A4F;
+$jaune : #E5E6CF;
+$vert : #645D43;
+//  STYLE POUR LA PAGE services.php
+
+// MISE EN PAGE DU MAIN
+main{
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 7fr;
+    grid-template-areas: 
+    "tete"
+    "service";
+}
+
+
+// ---------------------------------------------PREMIER ARTICLE
+#tete{
+    grid-area: tete;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    & > * {
+        margin: 20px 0;
+    }
+    #propo{
+        display: flex;
+        justify-content: center;
+
+    }
+    #propo div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    figure {
+        width: 80%;
+    }
+    i{
+        color: $red;
+        font-size: 3rem;
+    }
+}
+
+
+// --------------------------------------------------DEUXIEME ARTICLE AVEC LA DESCRIPTION DES DIFFERENTS ELEMENTS PROPOSES
+#service{
+    grid-area: service;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    position: relative;
+    article{
+        display: flex;
+        align-items: center;
+        margin: 60px 0;
+    }
+    figure img{
+        width: 175px;
+    }
+    article > * {
+        margin : 0 20px;
+    }
+    article:nth-child(even){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+
+    }
+    .desc{
+        font-style: italic;
+        font-size: 0.85rem;
+    }
+    #cta{
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
+//  -------------------------------------------MISE EN PAGE DU SLIDER
+#slider {
+    height: 290px;
+    position: relative;
+    padding-bottom: 50px;
+    figure{
+        height: 100%;
+        img{
+            height: 100%;
+        }
+    }
+
+
+
+
+    #precedant, #suivant, #circle{
+        position: absolute;
+        z-index: 1;
+    }
+    #circle{
+        left : calc(50% - 77px);
+        display: flex;
+        padding-top: 5px;
+        & > * {
+            border-radius: 25px;
+            background-color: #fff;
+            margin : 0 3px;
+            
+        }
+        & i:first-child{
+            background-color: $vert;
+        }
+    }
+    #precedant, #suivant{
+        font-size: 2.5rem;
+        top : calc(50% - 44px);
+ 
+        color: $red;
+        &:hover{
+            background-color:#e5e6cf77;
+            border-radius: 25px;
+        }
+    }
+    #precedant {
+        left : 5px;
+    }
+    #suivant {
+        right: 5px;
+    }
+}
+
+
+
+
+// -----------------DECORATION EN ARRIERE PLAN (BLOB ET FLECHE)
+
+#service > article:nth-child(odd){
+    position: relative;
+}
+.svg {
+    top:0px;
+    left: 0px;
+
+}
+#service #yoga {
+    width: 380px;
+    top: 31px;
+    left: 51px;
+}
+#service #sport{
+    width: 548px;
+    top: -44px;
+    left: 353px;
+}
+#service #lune {
+    width: 347px;
+    top: -2px;
+    left: 182px;
+}
+#deco > * {
+    width: 75%;
+    top : 0;
+    left : 0;
+}
+#un{
+    top: 213px;
+    width: 73.5%;
+    left: 103px;
+}
+#deux{
+    top: 503px;
+    width: 69.5%;
+    left: 178px;
+}
+#trois{
+    top: 812px;
+    width: 76.5%;
+    left: 128px;
+}
+#quatre{
+    top: 1056px;
+    width: 65.5%;
+    left: 188px;
+}
+#cinq{
+    top: 1377px;
+    width: 72.5%;
+    left: 153px;
+
+}
+#six{
+
+    top: 1632px;
+    width: 31%;
+    left: 555px;
+
+
+}
+
+
+
+
+
+
+//-----blob
+@media screen and(max-width: 1100px) {
+    #cinq{
+        top: 1417px;
+        width: 74.5%;
+        left: 117px;
+    }
+    #six{
+        top: 1682px;
+        width: 27%;
+        left: 441px;
+    }
+    #service #sport{
+        width: 473px;
+        top: -44px;
+        left: 266px;
+    }
+    
+}
+@media screen and(max-width: 900px) {
+    #service #sport{
+        width: 428px;
+        top: -22px;
+        left: 176px;
+    }
+    #un{
+        top: 221px;
+        width: 73.5%;
+        left: 70px;
+    }
+    #deux{
+        top: 527px;
+        width: 69.5%;
+        left: 102px;
+    }
+    #trois{
+        top: 812px;
+        width: 76.5%;
+        left: 128px;
+    }
+    #quatre{
+        top: 1106px;
+        width: 63.5%;
+        left: 171px;
+    }
+    #cinq{
+        top: 1421px;
+        width: 72.5%;
+        left: 91px;
+    }
+    #six{
+        top: 1694px;
+        width: 25%;
+        left: 367px;
+    }
+    
+}
+@media screen and(max-width: 700px) {
+    .svg{
+        display: none !important;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+//-----------------RESPONSIVE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------RESPONSIVE
+
+
+
+// telephone
+@media screen and (max-width:415px){
+    #tete #propo{
+        flex-direction: column;
+        & >* {
+            margin : 20px 0;
+        }
+    }
+    #service article{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #service article:nth-child(even){
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+    }
+    
+}

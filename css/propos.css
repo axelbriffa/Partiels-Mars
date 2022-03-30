@@ -1,0 +1,56 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gauche {
+  width: 90%;
+  margin-right: 20px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+h1 {
+  color: #BA6A4F;
+}
+
+#contact {
+  margin-top: 53px;
+}
+
+#contact > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+#contact > * p {
+  margin: 0 30px;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main figure {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  main p, main h1 {
+    text-align: start;
+  }
+}
+/*# sourceMappingURL=propos.css.map */

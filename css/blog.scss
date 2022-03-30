@@ -1,0 +1,176 @@
+$red : #BA6A4F;
+$jaune : #E5E6CF;
+$vert : #645D43;
+$blanc : #fff;
+// STYLE POUR LA PAGR blog.php
+
+// MISE EN PAGE DU MAIN
+main {
+
+    h1{
+        text-align: center;
+    }
+    form{
+        margin-top : 60px;
+    }
+
+    li:first-child{
+        margin-right: 40px;
+    }
+    form li:first-child > *{
+        padding: 5px;
+        border: solid $vert 2px;
+        height: 40px;
+        color : $vert;
+        margin-right: 20px;
+        background-color: $blanc;
+
+    }
+    #filtre {
+        height: 40px;
+        border: solid $vert 2px;
+        color: $blanc ;
+        background-color: $vert;
+
+    }
+    ul, li,a {
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+}
+#illu{
+    position: absolute;
+    width: 26%;
+    z-index: -1;
+    top: 98px;
+    right: 166px;
+}
+
+// MISE EN PAGE DES ARTICLES
+.blog{
+    border: solid 2px $red;
+    padding: 30px;
+    margin : 50px 0;
+    background-color: $blanc;
+}
+
+// MISE EN PAGE DE LA PARTIE HAUTE DES ARTICLES
+.haut{
+    display: flex;
+    margin-bottom: 20px;
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        width: 60%;
+        max-height: 275px;
+        overflow-y: scroll;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    figure{
+        width: 30%;
+    }
+}
+
+
+// MISE EN PAGE DE LA PARTIE BASSE DES ARTICLES
+.bas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+        
+    }
+    #avis {
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .oui, .non{
+        margin : 0 5px;
+        display: flex;
+        align-items: center;
+
+    }
+    form{
+        display: flex;
+    }
+    button:hover{
+        border: solid $vert 2px;
+    }
+    i{
+        font-size: 1.5rem;
+    }
+
+    
+}
+main {
+    button{
+        background: unset;
+        background: unset;
+        color: unset;
+        border: unset;
+    }
+
+    form {
+    margin: unset;
+    }
+}
+#blob {
+    top: 188px;
+    width: 54%;
+    left: 0%;
+
+}
+
+
+//-----------------RESPONSIVE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------RESPONSIVE
+@media screen and(max-width:950px){
+    #illu {
+        right: 93px;
+        top: 169px;
+    
+    }
+}
+// TABLETTE
+@media screen and(max-width:850px){
+    .haut figure {
+        width: 400px;
+    }
+}
+@media screen and(max-width: 770px){
+    #illu {
+        display: none;
+    
+    }
+    
+}
+@media screen and(max-width:600px){
+    main {
+        padding: 0 20px;
+    }
+    .haut{
+        flex-direction: column;
+        figure{
+            margin-bottom: 20px;
+        }
+    }
+    .bas{
+        flex-direction: column;
+        &>*{
+            margin: 7px 0;
+        }
+    }
+
+}
+
+
+// TELEPHONE
+
+
+
+
