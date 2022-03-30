@@ -40,36 +40,19 @@ Ou alors vous pouvez télécharger le fichier en hors-ligne en .zip
 - git commit -m "instructions du commit"
 - git push
 
-### Fonctionnalités présentes sur le site
+### Fonctionnalités 
 
-- Responsive (problème : la nav ne se regroupe pas dans un menu en responsive, c'est une fonctionnalité que je souhaite ajouter)
-- Logotype de redirection vers la page d'accueil
-- Scroll fluide
-- Variables de nombres
-
-### Fonctionnalités introduites et souhaitées mais non-fonctionnelles pour l'instant
-
-- Redirections vers des pages du site et vers les réseaux sociaux
-- Moteur de recherche interne
-- Inscription à la newsletter
-- Synchronisation à son wallet
-- Chat en ligne
-- Mise en ligne de NFTs
-- Connexion à son compte
-
-### Crédits
-
-Les sites et forums m'ont beaucoup aidé pour la réalisation graphique et pour le développement en voici une liste :
-
-- OpenClassroom
-- W3Schools
-- JsFiddle
-- FontAwesome
-- AirNFTS
-- OpenSea
-- Rarible
-- NFTShowroom
-- Pianity
+- Responsive
+- Liens vers les réseaux sociaux
+- FAQ (hors réseaux sociaux)
+- Avis clients blog
+- Newsletter
+- Fil d’Ariane
+- Logotype
+- CTA vers site annexe pour achat de prestation
+- Présentation des diverses prestations
+- Présentation de Julia Bordes
+- Page administrateur pour faciliter la vue de la bdd
 
 
 
